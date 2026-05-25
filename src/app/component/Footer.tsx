@@ -1,15 +1,15 @@
 "use client";
 import logo from "@/img/logo.svg";
-
 import Image from "next/image";
 import Link from "next/link";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { FaEnvelope, FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { PiInstagramLogoFill, PiMapPinFill } from "react-icons/pi";
+
 const Footer = () => {
   return (
-    <div className="bg-lightGreen w-full pt-5 border-t border-borderColor">
+    <div className="bg-lightGreen w-full pt-5">
       <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl py-7 relative px-4 mx-auto overflow-x-hidden">
         <div className="w-full">
           <div className="grid grid-cols-12 gap-x-4">
@@ -118,7 +118,7 @@ const Footer = () => {
                     +91-812 816 8787
                   </Link>
                 </div>
-                <div className="flex items-center gap-x-4 mb-5">
+                <div className="flex items-center gap-x-4 mb-3.5">
                   <FaEnvelope className="text-green size-5 shrink-0" />
                   <Link
                     href={"mailto:support@neomanthan.in"}

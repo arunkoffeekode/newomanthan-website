@@ -27,7 +27,7 @@ const ServicesMultiple = [
 ];
 const ServicesSection = () => {
   return (
-    <div className="bg-lightGray w-full py-8 border-y border-borderColor">
+    <div className="bg-lightGray w-full py-8">
       <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl relative px-4 mx-auto overflow-x-hidden">
         <div className="w-full text-center mb-8">
           <p className="text-textColor text-center uppercase text-font16 font-medium mb-2">
@@ -42,7 +42,7 @@ const ServicesSection = () => {
           </p>
         </div>
       </div>
-      <div className="w-full  overflow-hidden">
+      <div className="w-full overflow-hidden">
         <Swiper
           modules={[Autoplay]}
           loop={true}
