@@ -23,9 +23,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="w-full">
         <Header />
-        {children}
+        <div className="w-full mt-[68.11px] xl:mt-18">{children}</div>
         <Footer />
       </body>
     </html>

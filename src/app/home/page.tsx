@@ -1,7 +1,15 @@
 "use client";
 
+import FeatureSection from "./FeatureSection";
+import ServicesSection from "./ServicesSection";
+
 const HomePage = () => {
-  return <div>page kldbfskjsbd ksajhdfbk</div>;
+  return (
+    <>
+      <ServicesSection />
+      <FeatureSection />
+    </>
+  );
 };
 
 export default HomePage;

@@ -5,19 +5,33 @@
   --textColor: #323a2d;
   --lightGreen: #f6f7ed;
   --lightText: #999d96;
+  --borderColor: #d9d9d7;
+  --whiteColor: #ffffff;
+  --lightGray: #f6f6f6;
 }
 
 @theme inline {
-  --color-background: var(--background);
+  --color-green: var(--green);
   --color-textColor: var(--textColor);
   --color-lightGreen: var(--lightGreen);
   --color-lightText: var(--lightText);
+  --color-borderColor: var(--borderColor);
+  --color-whiteColor: var(--whiteColor);
+  --color-lightGray: var(--lightGray);
 
   /* Font Size */
   --text-font10: 10px;
   --text-font11: 11px;
   --text-font12: 12px;
+  --text-font14: 14px;
+  --text-font15: 15px;
+  --text-font16: 16px;
   --text-font17: 17px;
+  --text-font25: 25px;
+  --text-font27: 27px;
+  --text-font30: 30px;
+  --text-font40: 40px;
+  --text-font45: 45px;
 }
 
 * {
