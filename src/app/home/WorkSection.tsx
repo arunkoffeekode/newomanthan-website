@@ -48,7 +48,7 @@ const WorkSection = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
           <div className="flex flex-col gap-10">
             {steps.slice(0, 2).map((item, index) => (
-              <div className="w-full">
+              <div className="w-full" key={index}>
                 <div className="w-full text-center">
                   <Image
                     src={item.icon}
@@ -77,7 +77,7 @@ const WorkSection = () => {
           </div>
           <div className="flex flex-col gap-10">
             {steps.slice(2, 4).map((item, index) => (
-              <div className="w-full">
+              <div className="w-full" key={index}>
                 <div className="w-full text-center">
                   <Image
                     src={item.icon}

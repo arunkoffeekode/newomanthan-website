@@ -23,9 +23,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="w-full">
+      <body className="w-full horizontal-scroll">
         <Header />
-        <div className="w-full mt-[68.11px] xl:mt-18">{children}</div>
+        <div className="w-full mt-14.5 md:mt-16.5 xl:mt-18">{children}</div>
         <Footer />
       </body>
     </html>

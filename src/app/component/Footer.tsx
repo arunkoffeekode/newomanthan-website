@@ -9,8 +9,8 @@ import { PiInstagramLogoFill, PiMapPinFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <div className="bg-lightGreen w-full pt-5">
-      <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl py-7 relative px-4 mx-auto overflow-x-hidden">
+    <div className="bg-lightGreen w-full">
+      <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl py-8 relative px-4 mx-auto overflow-x-hidden">
         <div className="w-full">
           <div className="grid grid-cols-12 gap-x-4">
             <div className="col-span-full lg:col-span-5">

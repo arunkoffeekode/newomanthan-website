@@ -18,12 +18,12 @@ const ServicesMultiple = [
 
 const PartnerSection = () => {
   return (
-    <section className="bg-lightGreen w-full">
+    <section className="bg-lightGreen w-full overflow-hidden">
       <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl py-10 relative px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="col-span-full lg:col-span-4">
             <div className="w-full">
-              <h2 className="text-textColor text-font25 leading-8.75 md:text-font30 font-bold capitalize md:leading-10">
+              <h2 className="text-textColor text-font25 leading-8.75 xl:text-font30 font-bold capitalize xl:leading-10">
                 Trusted by companies everywhere
               </h2>
               <div className="flex items-center gap-x-3 justify-start mt-7">
@@ -58,7 +58,7 @@ const PartnerSection = () => {
             >
               {ServicesMultiple.map((item, index) => (
                 <SwiperSlide key={index} className="w-60!">
-                  <div className="bg-whiteColor rounded-[18px] border border-borderColor h-30 flex items-center justify-center px-8">
+                  <div className="bg-whiteColor rounded-[18px] border border-borderColor/50 h-30 flex items-center justify-center px-8">
                     <Image
                       src={item.img}
                       width={160}
