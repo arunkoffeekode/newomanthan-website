@@ -95,7 +95,7 @@ const Footer = () => {
                 </h4>
                 <ul className="m-0 p-0">
                   <li className="text-textColor hover:pl-2 text-font16 font-normal capitalize mb-2 cursor-pointer hover:text-green transition-all duration-300 ease-in">
-                    <Link href="#">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                   <li className="text-textColor hover:pl-2 text-font16 font-normal capitalize mb-2 cursor-pointer hover:text-green transition-all duration-300 ease-in">
                     <Link href="/about">About Us</Link>

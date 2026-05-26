@@ -2,25 +2,19 @@
 interface InputProps {
   InputName?: string;
   placeholder?: string;
-  type?: string;
   ClassName?: string;
 }
-const InputField = ({
-  placeholder,
-  type,
-  ClassName,
-  InputName,
-}: InputProps) => {
+const TextArea = ({ placeholder, ClassName, InputName }: InputProps) => {
   return (
     <div className={`w-full mb-3 ${ClassName}`}>
-      <input
-        type={type}
+      <textarea
         name={InputName}
         placeholder={placeholder}
+        rows={3}
         className="border border-borderColor px-3 py-2 max-w-full w-full text-font15 text-textColor placeholder:text-lightText font-normal placeholder:capitalize bg-whiteColor focus:border-green focus:outline-none rounded-lg"
       />
     </div>
   );
 };
 
-export default InputField;
+export default TextArea;
