@@ -2,12 +2,14 @@
 import logo from "@/img/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { FaEnvelope, FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { PiInstagramLogoFill, PiMapPinFill } from "react-icons/pi";
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className="bg-lightGreen w-full">
       <div className="container lg:max-w-280 xl:max-w-305 2xl:max-w-screen-2xl py-8 relative px-4 mx-auto overflow-x-hidden">
@@ -144,15 +146,24 @@ const Footer = () => {
         <div className="w-full pt-3 border-t border-borderColor mt-2 md:mt-4">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-1">
             <div className="w-full flex flex-wrap items-center justify-center xl:justify-start gap-3 text-textColor font-medium uppercase text-font14 2xl:text-font15 tracking-wide">
-              <span className="cursor-pointer hover:text-green transition-colors">
+              <span
+                className="cursor-pointer hover:text-green transition-colors"
+                onClick={() => router.push("/privacy-policy")}
+              >
                 Privacy Policy
               </span>
               <span className="text-green">|</span>
-              <span className="cursor-pointer hover:text-green transition-colors">
+              <span
+                className="cursor-pointer hover:text-green transition-colors"
+                onClick={() => router.push("/terms-conditions")}
+              >
                 Terms & Conditions
               </span>
               <span className="text-green">|</span>
-              <span className="cursor-pointer hover:text-green transition-colors">
+              <span
+                className="cursor-pointer hover:text-green transition-colors"
+                onClick={() => router.push("/refund-cancellation")}
+              >
                 Refund & Cancellation Policy
               </span>
             </div>
